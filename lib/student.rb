@@ -4,7 +4,9 @@ class Student
   def self.new_from_db(row)
     # create a new Student object given a row from the database
     new_student = self.new 
-    
+    new_student.id = id 
+    new_student.name = name 
+    new_student.grade = grade 
     
   end
 
