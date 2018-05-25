@@ -29,7 +29,8 @@ class Student
     
     sql = <<-SQL 
     SELECT * FROM students 
-    WHERE 
+    WHERE name = ? 
+    
   end
   
   def save
