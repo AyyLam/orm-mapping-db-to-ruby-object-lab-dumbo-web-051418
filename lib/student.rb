@@ -13,7 +13,7 @@ class Student
       SELECT * FROM Students
       SQL 
       
-    DB[:conn].execute(sql,)
+    DB[:conn].execute(sql).map 
     
   end
 
